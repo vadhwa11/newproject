@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<!-- <put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" /> -->
+	</definition>
+
+
+	<definition name="base-definition_login_logout"
+		template="/WEB-INF/views/tiles/layouts/loginLogoutLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Login Page -->
+	<definition name="login" extends="base-definition_login_logout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />
+	</definition>
+
+	<!-- error Page -->
+	<definition name="error" extends="base-definition_login_logout">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/error.jsp" />
+	</definition>
+	
+	
+    <!-- logout Page -->
+	<definition name="loggedOut" extends="base-definition_login_logout">
+		<put-attribute name="title" value="LogOut" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/loggedOut.jsp" />
+	</definition>
+	<!-- Register Page -->
+	<definition name="register" extends="base-definition_login_logout">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/register.jsp" />
+	</definition>
+
+	<!-- Login Page -->
+	<definition name="logout" extends="base-definition_login_logout">
+		<put-attribute name="title" value="LogOut" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/loggedOut.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+
+
+
+	<!-- Status of inventory  -->
+	<definition name="searchInventoryTypes" extends="base-definition">
+		<put-attribute name="title" value="searchInventoryTypes" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventoryTypes.jsp" />
+	</definition>
+	
+	
+
+	<!-- Status of inventory  -->
+	<definition name="searchInventoryTypes" extends="base-definition">
+		<put-attribute name="title" value="searchInventoryTypes" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventoryTypes.jsp" />
+	</definition>
+	
+	<!-- Status of inventory  -->
+	<definition name="searchInventoryStatus" extends="base-definition">
+		<put-attribute name="title" value="searchInventoryStatus" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventoryStatus.jsp" />
+	</definition>
+	
+	<!-- Inventory Details 	 -->
+	<definition name="searchInventoryDetails" extends="base-definition">
+		<put-attribute name="title" value="searchInventoryDetails" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventoryDetails.jsp" />
+	</definition>
+
+	<!-- Inventory Last Purchase Price -->
+	<definition name="searchInventoryLpp" extends="base-definition">
+		<put-attribute name="title" value="searchInventoryLpp" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventoryLpp.jsp" />
+	</definition>
+	
+	<!-- addInventory Page -->
+	<definition name="addInventory" extends="base-definition">
+		<put-attribute name="title" value="Inventory Add" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/addInventory.jsp" />
+	</definition>
+	
+	<!-- searchInventory Page -->
+	<definition name="searchInventory" extends="base-definition">
+		<put-attribute name="title" value="Inventory Search" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventory.jsp" />
+	</definition>
+	
+	
+	<definition name="searchCurrency" extends="base-definition">
+		<put-attribute name="title" value="searchCurrency" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchCurrency.jsp" />
+	</definition>
+
+	<definition name="search_currency_page" extends="base-definition">
+		<put-attribute name="title" value="search_currency_page" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/search_currency_page.jsp" />
+	</definition>
+	
+	<definition name="searchNAC" extends="base-definition">
+		<put-attribute name="title" value="searchNAC" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchNAC.jsp" />
+	</definition>
+		
+<!-- addInventory Page -->
+	<definition name="addInventory" extends="base-definition">
+		<put-attribute name="title" value="Inventory Add" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/addInventory.jsp" />
+	</definition>
+<!-- searchInventory Page -->
+	<definition name="searchInventory" extends="base-definition">
+		<put-attribute name="title" value="Inventory Search" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/searchInventory.jsp" />
+	</definition>
+<!-- updateInventory Page -->
+	<definition name="updateInventory" extends="base-definition">
+		<put-attribute name="title" value="Inventory Search" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/updateInventory.jsp" />
+	</definition>
+
+<definition name="addCurrencyPage" extends="base-definition">
+		<put-attribute name="title" value="addCurrencyPage" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/addCurrency.jsp" />
+	</definition>
+	
+	<definition name="editCurrencyPage" extends="base-definition">
+		<put-attribute name="title" value="editCurrencyPage" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/editCurrency.jsp" />
+	</definition>
+	
+	<definition name="refrenceForLPP" extends="base-definition">
+		<put-attribute name="title" value="refrenceForLPP" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/refrenceForLPP.jsp" />
+	</definition>
+
+
+
+
+</tiles-definitions>

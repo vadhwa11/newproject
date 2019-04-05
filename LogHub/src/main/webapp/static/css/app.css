@@ -1,0 +1,130 @@
+	/* html {
+	background-color: white;
+} */
+
+/* body {
+	height: 60%;
+	background-color:white; 
+} */
+
+.test,th{
+       text-align: right;
+       /*  padding-left:10px; */
+       padding-right:40px;
+       }
+       
+/* #header {
+	margin-left: 15%;
+	top: 0px;
+	width: 85%;
+	height: 20px;
+	position: fixed;
+	font-family: 'bgMed', arial, helvetica, sans-serif;
+	font-size: 0.6em;
+	color: white;
+	z-index: 15;
+	background-color: #325ddb;
+	text-align: center;
+} */
+#header {
+	
+	width: 100%;
+	
+	position: fixed;
+	font-family: 'bgMed', arial, helvetica, sans-serif;
+	font-size: 0.6em;
+	color: white;
+	/* z-index: 15;
+	background-color: #325ddb;
+	text-align: center; */
+}
+#footer {
+	margin-left: 15%;
+	left: 0px;
+	bottom: 0px;
+	width: 85%;
+	height: 5%;
+	position: fixed;
+	font-family: 'bgMed', arial, helvetica, sans-serif;
+	font-size: 0.6em;
+	color: white;
+	z-index: 15;
+	background-color: #213f96;
+	padding: 10px;
+	text-align: center;
+}
+
+.logo {
+	float: left;
+}
+
+.icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: "100px";
+	margin-top: "40px";
+	margin-bottom: "40px";
+}
+/* #sidemenu {
+	width: 15%;
+	background-color: #001a66;
+	height: 100%;
+	float: left;
+	z-index: 20;
+	position: fixed;
+	left: 0px;
+	margin-top:
+}
+ #site-content {
+   
+    background-color: transparent;
+	
+	height: 80%;
+	max-width: 1080px;
+	position: fixed;
+	float: left;
+	z-index: 20;
+	font-size:15px;
+	margin-top: 80px !important;
+	margin-bottom: 20% !important;
+	margin-left: 17%;
+	margin-right: 3%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}  */
+
+#sidemenu {
+	width: 15%;
+	background-color: #001a66;
+	height: 100%;
+	float: left;
+	z-index: 20;
+	position: fixed;
+	left: 0px;
+	margin-top: 67px !important;
+}
+ #site-content {
+   
+    background-color: transparent;
+	
+	height: 100%;
+	/* max-width: 1080px; */
+	position: fixed;
+	float: left;
+	z-index: 20;
+	font-size:15px;
+	margin-top: 80px !important;
+	margin-bottom: 20% !important;
+	margin-left: 17%;
+	margin-right: 3%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+} 
+.button{
+                background: url(../img/buttons_PNG4.png) no-repeat;
+                cursor:pointer;
+                border: none;
+            }
